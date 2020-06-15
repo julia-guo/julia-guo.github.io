@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		:root {
+			--bg: #fff;
+			--bg1: #ddd;
+			--bg2: #aaa;
+			--pink1: #f3d1dc;
+			--pink2: #f6a7c1;
+			--yellow1: #f1e0b0;
+			--yellow2: #f1cdb0;
+			--green1: #c5d7c0;
+			--green2: #8ec9bb;
+			--blue1: #b2d9ea;
+			--blue2: #84b4c8;
+			--purple1: #d3c0f9;
+			--purple2: #9c8ade;
+		}
+
+		body{
+			color: var(--bg);
+			font-family: Work Sans;
+			font-weight: 300;
+			background-color: var(--bg);
+			background-image: url("grid.png");
+			font-size:30px;
+			height:100vh;
+		}
+
+		h1{
+			line-height: 30px;
+			font-weight: 600;
+			font-size:50px;
+		}
+
+		h2{
+			font-weight: 500;
+			font-size:36px;
+		}
+
+		a{
+			color: #fff;
+			transition: 0.3s;
+		}
+
+		a:hover{
+			color: #33b1ff;
+		}
+
+		img{
+			 border:1px solid var(--bg);
+			 display: block;
+			 margin-left: auto;
+			 margin-right: auto;
+		}
+
+		.flex-container {
+			display: flex;
+			flex-wrap: nowrap; 
+			overflow: auto;
+			top:0px;
+			bottom:0px;
+			position:absolute;
+		}
+
+		.flex-item {
+			flex: 0 0 auto;
+			height:100%;
+			position:relative;
+		}
+
+		.box{
+			height: auto;
+			width: auto;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			margin-left:50px;
+			padding: 50px;
+			color: var(--bg);
+			border: 1px solid var(--bg);
+		}
+
+		.column{
+			flex: 50%;
+		}
+
+		#zero{
+			font-size:20px;
+			padding:20px;
+			padding-top:0px;
+			padding-bottom:0px;
+			color: var(--bg2);
+			background: var(--bg);
+			border:1px solid var(--bg1);
+			box-shadow: 3px 3px 0px var(--bg1);
+			text-shadow: 1px 1px 0px var(--bg1);
+		}
+
+		#one{
+			background: var(--pink1);
+			box-shadow: 5px 5px 0px var(--pink2);
+			text-shadow: 1px 1px 0px var(--pink2), 2px 2px 0px var(--pink2);
+		}
+
+		#one h1{
+			text-shadow: 1px 1px 0px var(--pink2), 2px 2px 0px var(--pink2), 3px 3px 0px var(--pink2), 4px 4px 0px var(--pink2);
+		}
+
+		#two{
+			font-size:20px;
+			background: var(--yellow1);
+			box-shadow: 5px 5px 0px var(--yellow2);
+			text-shadow: 1px 1px 0px var(--yellow2), 2px 2px 0px var(--yellow2);
+		}
+
+		#two h1{
+			text-shadow: 1px 1px 0px var(--yellow2), 2px 2px 0px var(--yellow2), 3px 3px 0px var(--yellow2), 4px 4px 0px var(--yellow2);
+		}
+
+		#three{
+			display: flex;
+			font-size:20px;
+			background: var(--green1);
+			box-shadow: 5px 5px 0px var(--green2);
+			text-shadow: 1px 1px 0px var(--green2), 2px 2px 0px var(--green2);
+		}
+
+		#three h1{
+			text-shadow: 1px 1px 0px var(--green2), 2px 2px 0px var(--green2), 3px 3px 0px var(--green2), 4px 4px 0px var(--green2);
+		}
+
+		#three h2{
+			text-shadow: 1px 1px 0px var(--green2), 2px 2px 0px var(--green2), 3px 3px 0px var(--green2);
+		}
+
+		#four{
+			display:flex;
+			font-size:20px;
+			background: var(--blue1);
+			box-shadow: 5px 5px 0px var(--blue2);
+			text-shadow: 1px 1px 0px var(--blue2), 2px 2px 0px var(--blue2);
+		}
+
+		#four h1{
+			text-shadow: 1px 1px 0px var(--blue2), 2px 2px 0px var(--blue2), 3px 3px 0px var(--blue2), 4px 4px 0px var(--blue2);
+		}
+
+		#five{
+			background: var(--purple1);
+			box-shadow: 5px 5px 0px var(--purple2);
+			text-shadow: 1px 1px 0px var(--purple2), 2px 2px 0px var(--purple2);
+		}
+
+		#five h1{
+			text-shadow: 1px 1px 0px var(--purple2), 2px 2px 0px var(--purple2), 3px 3px 0px var(--purple2), 4px 4px 0px var(--purple2);
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="flex-container">
+		<div class="flex-item">
+		<div class="box" id="zero">
+			<p>welcome!<br>→→→</p>		
+		</div>
+		</div>
+
+		<div class="flex-item">
+		<div class="box" id="one">
+			<img src="beach.jpg" height=300px><p>hi~ 👋 my name is <h1>Julia Guo! ✨</h1></p>		
+		</div>
+		</div>
+
+		<div class="flex-item">
+		<div class="box" id="two">
+			<img src="candy_sun.jpg" width=300px>
+			<h1>quick facts:</h1>	
+			<p>
+				<ul>
+					<li>born & raised in central nj 🇺🇸</li>
+					<li>daughter of chinese immigrants 🇨🇳</li>
+					<li>one 11 y/o brother + one 9 y/o <br>pomeranian named candy 🐶💖</li>
+					<li>rising junior at columbia university 🦁</li>
+					<li>majors: computer science + math 👩🏻‍💻</li>
+				</ul>
+			</p>
+		</div>
+		</div>
+
+		<div class="flex-item">
+		<div class="box" id="three">
+			<h1 style="line-height:60px;">my favorite things:</h1>
+			<p>
+				<div class="column">
+				<h2>tech:</h2>
+				<ul>
+					<li>natural language processing 🤗📚<br>(i'm a student researcher in <br>the 
+						<a href="http://www.cs.columbia.edu/speech/">columbia speech lab!</a>)</li>
+					<li>ai for social good ⚖️</li>
+					<li>ui/ux design 📐🖍️</li>
+					<li>hackathons! 😃</li>
+					<li>C ❤️ (i'm a teaching assistant<br>for the <a href="http://www.cs.columbia.edu/~jae/3157/">class</a> at Columbia)</li>
+					<li>virtual reality 🤯</li>
+				</ul>
+				</div>
+  				<div class="column">
+				<h2>non-tech:</h2>
+				<ul>
+					<li>listening to music 🎵<br>
+					(EDM, indie rock, kpop)</li>
+					<li>cooking & baking 🍳🍰, especially<br>w/ fresh fruits and vegetables! 🍓🌱</li>
+					<li>playing the piano 🎹</li>
+					<li>video games (league of <br>legends, animal crossing, ...) 🎮</li>
+					<li>biking & hiking 🚲🏞️</li>
+					<li>exploring NYC 🏙️</li>
+					<li>walking the dog 🐕</li>
+					<li>art & design 🎨🖌️</li>
+				</ul>
+				</div>
+			</p>
+		</div>
+		</div>
+
+		<div class="flex-item">
+		<div class="box" id="four">
+			<h1 style="line-height:60px; margin-right:50px;">life in pictures:</h1>
+			<div class="column">
+				<img src="nyc.jpg" width=250px style="display:inline;">
+				<p>
+				attending college in nyc <br>has been incredible —<br>so much to do and see 🤩</p>
+			</div>
+			<div class="column">
+				<img src="noodles.jpg" width=250px style="display:inline;">
+				<p>
+				i'm staying in the city with <br>my boyfriend this summer, <br>so i've had the chance <br>to cook a lot recently 😋</p>
+			</div>
+			<div class="column">
+				<img src="quebec.jpg" width=250px style="display:inline;">
+				<p>
+				i love to travel and explore <br>new places ✈️ here's me <br>in quebec city! 🇨🇦</p>
+			</div>
+			<div class="column">
+				<img src="cat.jpg" width=250px style="display:inline;">
+				<img src="frog.jpg" width=250px style="display:inline;">
+				<p>
+				i'm not really an artist,<br>but love drawing cute animals 🐱<br>i guess this is my niche hobby??</p>
+			</div>
+		</div>
+		</div>
+
+		<div class="flex-item">
+		<div class="box" id="five">
+			<center>
+			<h1>let's connect!</h1>
+			<p>
+				<a href="https://www.linkedin.com/in/julia-guo/">linkedin</a><br>
+				<a href="https://github.com/julia-guo">github</a><br>
+				<a href="mailto:jzg2110@columbia.edu">jzg2110@columbia.edu</a>
+			</p>
+			</center>
+		</div>
+		</div>
+
+		<div class="flex-item">
+		<div class="box">
+		</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
