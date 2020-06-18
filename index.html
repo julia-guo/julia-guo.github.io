@@ -185,17 +185,33 @@
 </head>
 
 <body>
-	<div class="toggle" role="contentinfo" aria-labelledby="colortoggle"><p id="colortoggle" style="margin:0px;">white-on-pastel too harsh on the eyes? click <button type="button" onclick="invert()">here</button> to toggle! ☀️ | 🌙</p></div>
+	
+	<div class="toggle" role="contentinfo" aria-labelledby="colortoggle">
+		<p id="colortoggle" style="margin:0px;">
+			white-on-pastel too harsh on the eyes? click 
+			<button type="button" onclick="invert()">here</button>
+			to toggle! ☀️ | 🌙
+		</p>
+	</div>
+	
 	<div class="flex-container">
 		<div class="flex-item">
 		<div class="box" id="zero" role="contentinfo" aria-labelledby="welcome">
-			<p id="welcome">welcome!<br>→→→<br><div style="font-size:13px;margin-top:-20px;">use arrow keys or trackpad to scroll right!</div></p>		
+			<p id="welcome">
+				welcome!<br>
+				→→→<br>
+				<div style="font-size:13px;margin-top:-20px;">use arrow keys or trackpad to scroll right!</div>
+			</p>		
 		</div>
 		</div>
 
 		<div class="flex-item">
 		<div class="box" id="one" role="main" aria-labelledby="name">
-			<img src="beach.jpg" alt="Me at the beach!" height=300px><p id="name">hi~ 👋 my name is <h1>Julia Guo! ✨</h1></p>		
+			<img src="beach.jpg" alt="Me at the beach!" height=300px>
+			<p id="name">
+				hi~ 👋 my name is 
+				<h1 id="julia">Julia Guo! ✨</h1>
+			</p>		
 		</div>
 		</div>
 
@@ -220,7 +236,7 @@
 			<h1 style="line-height:60px;" id="favorites">my favorite things:</h1>
 			<p>
 				<div class="column">
-				<h2>tech:</h2>
+				<h2 id="tech">tech:</h2>
 				<ul>
 					<li>natural language processing 🤗📚<br>(i'm a student researcher in <br>the 
 						<a href="http://www.cs.columbia.edu/speech/">columbia speech lab!</a>)</li>
@@ -232,7 +248,7 @@
 				</ul>
 				</div>
   				<div class="column">
-				<h2>non-tech:</h2>
+				<h2 id="nontech">non-tech:</h2>
 				<ul>
 					<li>listening to music 🎵<br>
 					(EDM, indie rock, kpop)</li>
