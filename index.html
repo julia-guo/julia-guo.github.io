@@ -177,25 +177,28 @@
 
 	</style>
 	<title>Hello!👋</title>
+	<link rel="icon" 
+      type="image/png" 
+      href="favicon.png">
 </head>
 
 <body>
-	<div class="toggle">white-on-pastel too harsh on the eyes? click <button type="button" onclick="invert()">here</button> to toggle! ☀️ | 🌙</div>
+	<div class="toggle" role="contentinfo" aria-labelledby="colortoggle">white-on-pastel too harsh on the eyes? click <button type="button" onclick="invert()">here</button> to toggle! ☀️ | 🌙</div>
 	<div class="flex-container">
 		<div class="flex-item">
-		<div class="box" id="zero" role="main">
+		<div class="box" id="zero" role="main" aria-labelledby="welcome">
 			<p>welcome!<br>→→→</p>		
 		</div>
 		</div>
 
 		<div class="flex-item">
-		<div class="box" id="one" role="main">
+		<div class="box" id="one" role="main" aria-labelledby="name">
 			<img src="beach.jpg" alt="Me at the beach!" height=300px><p>hi~ 👋 my name is <h1>Julia Guo! ✨</h1></p>		
 		</div>
 		</div>
 
 		<div class="flex-item">
-		<div class="box" id="two" role="main">
+		<div class="box" id="two" role="main" aria-labelledby="about">
 			<img src="candy_sun.jpg" alt="My puppy!" width=300px>
 			<h1>quick facts:</h1>	
 			<p>
@@ -211,7 +214,7 @@
 		</div>
 
 		<div class="flex-item">
-		<div class="box" id="three" role="main">
+		<div class="box" id="three" role="main" aria-labelledby="favorites">
 			<h1 style="line-height:60px;">my favorite things:</h1>
 			<p>
 				<div class="column">
@@ -245,7 +248,7 @@
 		</div>
 
 		<div class="flex-item">
-		<div class="box" id="four" role="main">
+		<div class="box" id="four" role="main" aria-labelledby="photos">
 			<h1 style="line-height:60px; margin-right:50px;">life in pictures:</h1>
 			<div class="column">
 				<img src="nyc.jpg" alt="Me and my friend Ally on the Brooklyn Bridge at night!" width=250px style="display:inline;">
@@ -272,7 +275,7 @@
 		</div>
 
 		<div class="flex-item">
-		<div class="box" id="five" role="main">
+		<div class="box" id="five" role="main" aria-labelledby="links">
 			<center>
 			<h1>let's connect!</h1>
 			<p>
